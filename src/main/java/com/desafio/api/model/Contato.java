@@ -96,7 +96,16 @@ public class Contato implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Contato [id=" + idContato + ", nome=" + nome + ", canal=" + canal + ", valor=" + valor + ", obs=" + obs + "]";
+		return "Contato [id=" + 
+	                idContato + 
+	                ", nome=" + 
+	                     nome + 
+	               ", canal=" + 
+	                    canal +
+	               ", valor=" +
+	                    valor + 
+	                 ", obs=" + 
+	                      obs + "]";
 	}
 	
 

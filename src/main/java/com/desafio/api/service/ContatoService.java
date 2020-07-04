@@ -34,9 +34,8 @@ public class ContatoService {
 		contato.setCanal(contato.getCanal());
 		contato.setValor(contato.getValor());
 		contato.setObs(contato.getObs());
-
+		
 		contatoRepository.save(contato);
-
 		return new ResponseEntity<Contato>(HttpStatus.OK);
 	}
 
@@ -56,8 +55,11 @@ public class ContatoService {
 
 	/* Cria um novo objeto do tipo Contato */
 	public Contato novoContato(Contato contato) {
-		contato = new Contato(null, contato.getNome(), contato.getCanal(), contato.getValor(), contato.getObs());
-
+		contato = new Contato(null, 
+				contato.getNome(), 
+				contato.getCanal(), 
+				contato.getValor(), 
+				contato.getObs());
 		return contatoRepository.save(contato);
 	}
 
